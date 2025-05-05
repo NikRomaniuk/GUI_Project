@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDecode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title title">
+                Change number system
+            </h1>
+            <div class="header__subtitle">
+            </div>
+            <div class="back">
+                <a class="back__link" href="index.html">Back to main page</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="calc">
+        <div class="container">
+            <form class="form" method="post">
+                <div class="calc__inner">
+                    <div class="calc__header">
+                        <label for="">Number</label>
+                        <input class="calc__input" id="num" type="" placeholder="Type number">
+                    </div>
+
+                    <div class="calc__content">
+                        <p class="calc__content-text">From To</p>
+                        <select class="calc__select" id="firstSystem">
+                            <option value="2">2</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                        </select>
+                        <img class="calc__image" src="images/arrow-right-svgrepo-com.svg" alt="arrows" width="24" height="24">
+                        <select class="calc__select" id="secondSystem">
+                            <option value="2">2</option>
+                            <option value="8">8</option>
+                            <option value="10" selected>10</option>
+                        </select>
+                    </div>
+
+                    <button class="button">Convert</button>
+
+                    <div class="calc__result">
+                        <h3 class="calc__result-number">
+                            Result
+                        </h3>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
