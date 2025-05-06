@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDecode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title title">
+                Ceasar's cipher
+            </h1>
+            <div class="header__subtitle">
+            </div>
+            <div class="back">
+                <a class="back__link" href="index.html">Back to main page</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="ceasar">
+        <div class="container">
+            <form class="form" method="post">
+                <div class="ceasar__inner">
+                    <div class="ceasar__header">
+                        <label for="">Type text</label>
+                        <textarea class="ceasar__input" name="" id="" placeholder="Text here"></textarea>
+                    </div>
+
+                    <div class="ceasar__content">
+                        <p class="ceasar__content-text">Option:</p>
+                        <select class="ceasar__select" id="firstSystem">
+                            <option value="encrypt">encrypt</option>
+                            <option value="decipher">decipher</option>
+                        </select>
+
+                        <p class="ceasar__content-text">Shift:</p>
+                        <select class="ceasar__select" id="secondSystem">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <button class="button">Convert</button>
+
+                    <div class="ceasar__result">
+                        <h3 class="ceasar__result-text">
+                            Result
+                        </h3>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
