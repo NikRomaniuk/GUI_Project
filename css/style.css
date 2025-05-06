@@ -104,6 +104,10 @@ input::placeholder {
     background-color: #b3b3b3;
 }
 
+.select__list-link{
+    padding: 30px 15px;
+}
+
 .form {
     padding: 50px;
     border: 2px solid #676767;
