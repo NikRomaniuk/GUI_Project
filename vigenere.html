@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container">
             <h1 class="header__title title">
-                Change number system
+                Vigenere cipher
             </h1>
             <div class="header__subtitle">
             </div>
@@ -27,34 +27,30 @@
 
 
 
-    <section class="calc">
+    <section class="vigenere">
         <div class="container">
             <form class="form" method="post">
-                <div class="calc__inner">
-                    <div class="calc__header">
-                        <label for="">Number</label>
-                        <input class="calc__input" id="num" type="" placeholder="Type number">
+                <div class="vigenere__inner">
+                    <div class="vigenere__header">
+                        <label for="">Type text</label>
+                        <textarea class="vigenere__input" name="" id="" placeholder="Text here"></textarea>
                     </div>
 
-                    <div class="calc__content">
-                        <p class="calc__content-text">From To</p>
-                        <select class="calc__select" id="firstSystem">
-                            <option value="2">2</option>
-                            <option value="8">8</option>
-                            <option value="10">10</option>
-                        </select>
-                        <img class="calc__image" src="images/arrow-right-svgrepo-com.svg" alt="arrows" width="24" height="24">
-                        <select class="calc__select" id="secondSystem">
-                            <option value="2">2</option>
-                            <option value="8">8</option>
-                            <option value="10" selected>10</option>
+                    <div class="vigenere__content">
+                        <p class="vigenere__content-text">Key:</p>
+                        <input class="vigenere__input-key" type="text">
+
+                        <p class="vigenere__content-text">Option:</p>
+                        <select class="vigenere__select" id="firstSystem">
+                            <option value="encrypt">encrypt</option>
+                            <option value="decipher">decipher</option>
                         </select>
                     </div>
 
                     <button class="button">Convert</button>
 
-                    <div class="calc__result">
-                        <h3 class="calc__result-number">
+                    <div class="vigenere__result">
+                        <h3 class="vigenere__result-text">
                             Result
                         </h3>
                     </div>

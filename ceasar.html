@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container">
             <h1 class="header__title title">
-                Change number system
+                Ceasar's cipher
             </h1>
             <div class="header__subtitle">
             </div>
@@ -27,34 +27,36 @@
 
 
 
-    <section class="calc">
+    <section class="ceasar">
         <div class="container">
             <form class="form" method="post">
-                <div class="calc__inner">
-                    <div class="calc__header">
-                        <label for="">Number</label>
-                        <input class="calc__input" id="num" type="" placeholder="Type number">
+                <div class="ceasar__inner">
+                    <div class="ceasar__header">
+                        <label for="">Type text</label>
+                        <textarea class="ceasar__input" name="" id="" placeholder="Text here"></textarea>
                     </div>
 
-                    <div class="calc__content">
-                        <p class="calc__content-text">From To</p>
-                        <select class="calc__select" id="firstSystem">
-                            <option value="2">2</option>
-                            <option value="8">8</option>
-                            <option value="10">10</option>
+                    <div class="ceasar__content">
+                        <p class="ceasar__content-text">Option:</p>
+                        <select class="ceasar__select" id="firstSystem">
+                            <option value="encrypt">encrypt</option>
+                            <option value="decipher">decipher</option>
                         </select>
-                        <img class="calc__image" src="images/arrow-right-svgrepo-com.svg" alt="arrows" width="24" height="24">
-                        <select class="calc__select" id="secondSystem">
+
+                        <p class="ceasar__content-text">Shift:</p>
+                        <select class="ceasar__select" id="secondSystem">
+                            <option value="1">1</option>
                             <option value="2">2</option>
-                            <option value="8">8</option>
-                            <option value="10" selected>10</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
 
                     <button class="button">Convert</button>
 
-                    <div class="calc__result">
-                        <h3 class="calc__result-number">
+                    <div class="ceasar__result">
+                        <h3 class="ceasar__result-text">
                             Result
                         </h3>
                     </div>
