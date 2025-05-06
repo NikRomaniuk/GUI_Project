@@ -177,7 +177,6 @@ input::placeholder {
 .ceasar__header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     row-gap: 15px;
 }
 
