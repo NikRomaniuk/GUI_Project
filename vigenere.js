@@ -32,7 +32,7 @@ document.querySelector(".form").addEventListener("submit", function(e)
     {
         result = "";
 
-        // Make sure keyword contains only letters
+        // Make sure keyword contains only letters / Regex (Regular Expressions)
         if (!/^[a-zA-Z]+$/.test(keyword))
         {
             throw new Error("Invalid keyword");

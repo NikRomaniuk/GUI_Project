@@ -28,13 +28,13 @@ document.querySelector(".form").addEventListener("submit", function(e)
 
     try
     {
-        // Allowing special digits (charachters) for certain number systems
+        // Allowing special digits (charachters) for certain number systems / Regex (Regular Expressions)
         const regex = 
         { 
-            2: /^[01]+$/,
-            8: /^[0-7]+$/,
-            10: /^[0-9]+$/,
-            16: /^[0-9A-Fa-f]+$/
+            2: /^[01]+$/, // Binary
+            8: /^[0-7]+$/, // Octal
+            10: /^[0-9]+$/, // Decimal
+            16: /^[0-9A-Fa-f]+$/ // Hexadecimal
         };
 
         // Telling user about error if any
