@@ -8,13 +8,13 @@ document.querySelector(".form").addEventListener("submit", function(e)
     e.preventDefault();
     
     // Getting input message
-    const inputMessage = document.getElementById("mes").value.trim();
+    const inputMessage = document.getElementById("mes").value;
     
     // Getting action (encrypt/decrypt)
     const action = parseInt(document.getElementById("action").value);
 
     // Getting keyword
-    let keyword = document.getElementById("key").value.trim();
+    let keyword = document.getElementById("key").value;
     
     // Make sure some message and keyword is inside blank
     if (!inputMessage || !keyword)
@@ -58,7 +58,7 @@ document.querySelector(".form").addEventListener("submit", function(e)
                 const charIndex = char.toUpperCase().charCodeAt(0) - 65;
                 
                 // Get the key character (0-25 index)
-                const keyChar = keyword.charCodeAt(keyIndex % key.length) - 65;
+                const keyChar = key.charCodeAt(keyIndex % key.length) - 65;
                 
                 // Encrypt or decrypt
                 let resultIndex;
