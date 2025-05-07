@@ -32,34 +32,41 @@
             <form class="form" method="post">
                 <div class="vigenere__inner">
                     <div class="vigenere__header">
-                        <label for="">Type text</label>
-                        <textarea class="vigenere__input" name="" id="" placeholder="Text here"></textarea>
+                        <label for="">Initial Message</label>
+                        <textarea class="vigenere__input" name="" id="mes" placeholder="Type message..."></textarea>
                     </div>
 
                     <div class="vigenere__content">
-                        <p class="vigenere__content-text">Key:</p>
-                        <input class="vigenere__input-key" type="text">
-
                         <p class="vigenere__content-text">Option:</p>
-                        <select class="vigenere__select" id="firstSystem">
-                            <option value="encrypt">encrypt</option>
-                            <option value="decipher">decipher</option>
+                        <select class="vigenere__select" id="action">
+                            <option value="1">Encrypt</option>
+                            <option value="0">Decrypt</option>
                         </select>
+
+                        <p class="vigenere__content-text">Keyword (Letters only):</p>
+                        <textarea class="vigenere__input-key" name="" id="key" placeholder="Type keyword..."></textarea>
                     </div>
 
                     <button class="button">Convert</button>
 
-                    <div class="vigenere__result">
-                        <h3 class="vigenere__result-text">
-                            Result
-                        </h3>
+                    <hr>
+
+                    <div class="vigenere__result-section">
+                        <label for="">Result</label>
+                        <div class="vigenere__result">
+                            <p class="vigenere__result-text" id="resultLabel">
+                                See your keyworded text here
+                            </p>
+                        </div>
                     </div>
+
+                    <button class="button" id="copyResult">Copy Result to Clipboard</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="vigenere.js"></script>
 </body>
 
 </html>

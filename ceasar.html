@@ -32,40 +32,41 @@
             <form class="form" method="post">
                 <div class="ceasar__inner">
                     <div class="ceasar__header">
-                        <label for="">Type text</label>
-                        <textarea class="ceasar__input" name="" id="" placeholder="Text here"></textarea>
+                        <label for="">Initial Message</label>
+                        <textarea class="ceasar__input" name="" id="mes" placeholder="Type message..."></textarea>
                     </div>
 
                     <div class="ceasar__content">
                         <p class="ceasar__content-text">Option:</p>
-                        <select class="ceasar__select" id="firstSystem">
-                            <option value="encrypt">encrypt</option>
-                            <option value="decipher">decipher</option>
+                        <select class="ceasar__select" id="action">
+                            <option value="1">Encrypt</option>
+                            <option value="0">Decrypt</option>
                         </select>
 
-                        <p class="ceasar__content-text">Shift:</p>
-                        <select class="ceasar__select" id="secondSystem">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                        <p class="ceasar__content-text">Shift (1-25):</p>
+                        <input class="ceasar__input-key" id="key" type="number" min="1" max="25" value="5">
                     </div>
 
                     <button class="button">Convert</button>
 
-                    <div class="ceasar__result">
-                        <h3 class="ceasar__result-text">
-                            Result
-                        </h3>
+                    <hr>
+
+                    <div class="ceasar__result-section">
+                        <label for="">Result</label>
+                        <div class="ceasar__result">
+                            <p class="ceasar__result-text" id="resultLabel">
+                                See your shifted text here
+                            </p>
+                        </div>
                     </div>
+
+                    <button class="button" id="copyResult">Copy Result to Clipboard</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="ceasar.js"></script>
 </body>
 
 </html>

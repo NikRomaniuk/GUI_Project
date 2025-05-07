@@ -15,12 +15,12 @@
     <header class="header">
         <div class="container">
             <h1 class="header__title title">
-                Change number system
+                Number Systems Converter
             </h1>
             <div class="header__subtitle">
             </div>
             <div class="back">
-                <a class="back__link" href="index.html">Back to main page</a>
+                <a class="back__link" href="index.html">Back to Main Page</a>
             </div>
         </div>
     </header>
@@ -32,38 +32,47 @@
             <form class="form" method="post">
                 <div class="calc__inner">
                     <div class="calc__header">
-                        <label for="">Number</label>
-                        <input class="calc__input" id="num" type="" placeholder="Type number">
+                        <label for="">Initial Number</label>
+                        <input class="calc__input" id="num" type="" placeholder="Type number...">
                     </div>
 
                     <div class="calc__content">
                         <p class="calc__content-text">From To</p>
                         <select class="calc__select" id="firstSystem">
-                            <option value="2">2</option>
+                            <option value="2" selected>2</option>
                             <option value="8">8</option>
                             <option value="10">10</option>
+                            <option value="16">16</option>
                         </select>
                         <img class="calc__image" src="images/arrow-right-svgrepo-com.svg" alt="arrows" width="24" height="24">
                         <select class="calc__select" id="secondSystem">
                             <option value="2">2</option>
                             <option value="8">8</option>
                             <option value="10" selected>10</option>
+                            <option value="16">16</option>
                         </select>
                     </div>
 
                     <button class="button">Convert</button>
 
-                    <div class="calc__result">
-                        <h3 class="calc__result-number">
-                            Result
-                        </h3>
+                    <hr>
+
+                    <div class="calc__result-section">
+                        <label for="">Result</label>
+                        <div class="calc__result">
+                            <p class="calc__result-number" id="resultLabel">
+                                Start converting!
+                            </p>
+                        </div>
                     </div>
+
+                    <button class="button" id="copyResult">Copy Result to Clipboard</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="number.js"></script>
 </body>
 
 </html>
